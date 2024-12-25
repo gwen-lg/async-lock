@@ -1,3 +1,6 @@
+//! source of inspiration :
+//! https://rust-lang.github.io/async-book/02_execution/03_wakeups.html
+
 use core::{cell::UnsafeCell, ptr::NonNull, task::Waker};
 
 /// TODO: document
