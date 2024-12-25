@@ -85,7 +85,8 @@ impl<T> RwLock<T> {
     ///
     /// let lock = RwLock::new(5);
     /// assert_eq!(lock.into_inner(), 5);
-    /// ```
+    /// ```an
+    // TODO: test with read/write lock in progress, should be an async ?
     #[must_use]
     #[inline]
     pub fn into_inner(self) -> T {
