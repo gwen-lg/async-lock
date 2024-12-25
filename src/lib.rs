@@ -88,16 +88,16 @@ macro_rules! const_fn {
 }
 
 mod barrier;
-mod cell;
 mod mutex;
 mod once_cell;
+mod refcell;
 mod rwlock;
 mod semaphore;
 
 pub use barrier::{Barrier, BarrierWaitResult};
-pub use cell::RefCell;
 pub use mutex::{Mutex, MutexGuard, MutexGuardArc};
 pub use once_cell::OnceCell;
+pub use refcell::RefCell;
 pub use rwlock::{
     RwLock, RwLockReadGuard, RwLockReadGuardArc, RwLockUpgradableReadGuard,
     RwLockUpgradableReadGuardArc, RwLockWriteGuard, RwLockWriteGuardArc,
